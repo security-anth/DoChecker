@@ -20,7 +20,8 @@ DoCheckerをインストールできた方は、VSCode上でDockerfileを開い�
 DoCheckerはVSCode上のDockerfileがアクティブエディタとなったとき，もしくは保存されたときに脆弱性診断を行います．
 DoCheckerが正常に動作している場合は以下のような出力が得られると思います．
 
-＜図＞
+![スクリーンショット (5)](https://github.com/user-attachments/assets/e689498b-4557-442c-9786-01368840652c)
+
 
 ## 開発者
 セキュリティ讃歌
