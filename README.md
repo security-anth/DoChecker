@@ -1,6 +1,7 @@
 # Dockerfile脆弱性診断ツール：DoChecker
 DoCheckerはDockerfileの脆弱性を調査するVisual Studio Code（VSCode）の拡張機能です．
 コンテナ作成前の段階で，ある程度の安全性を保ったコンテナの作成に貢献できたらと思い，作りました．
+
 Dockerfileの情報だけでは，十分な脆弱性診断ができるとは言えないため，しっかり安全性を確保したいという方は，DoCheckerと並列し，作成したコンテナの診断ツールをご利用ください．
 
 DoCheckerの動作のイメージ図は以下のものとなっています．
