@@ -14,7 +14,8 @@ DoCheckerに関するファイルは、本ページのDoChecker.vsixを配置し
 具体的なインストール手順を以下に示す．
 ---
 (1) VSCodeの拡張機能画面を開く．
-![スクリーンショット 2024-09-28 144838](https://github.com/user-attachments/assets/2ea17431-6a94-4f11-831f-c026e75ebcad)
+![スクリーンショット 2024-09-28 144838](https://github.com/user-attachments/assets/9126c548-480b-4d8c-9f12-14f99ccbae32)
+
 
 (2) VSCodeの拡張機能画面の右上の「・・・」をクリックし，「VSIXからインストール」を選択．
 ![スクリーンショット 2024-09-28 144814](https://github.com/user-attachments/assets/cbe46821-f5b3-4861-989c-5ad9c18ad62f)
