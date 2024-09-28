@@ -1,9 +1,13 @@
 # Dockerfile脆弱性診断ツール：DoChecker
 DoCheckerはDockerfileの脆弱性を調査するVisual Studio Code（VSCode）の拡張機能です．
+コンテナ作成前の段階で，ある程度の安全性を保ったコンテナの作成に貢献できたらと思い，作りました．
+Dockerfileの情報だけでは，十分な脆弱性診断ができるとは言えないため，しっかり安全性を確保したいという方は，DoCheckerと並列し，作成したコンテナの診断ツールをご利用ください．
+
 DoCheckerの動作のイメージ図は以下のものとなっています．
 ![画像1](https://github.com/user-attachments/assets/4bcd1da8-b484-43b7-9d9e-cd4b730f0d73)
 
 Dockerfileに記載したパッケージの情報（パッケージ名、バージョン情報）をもとに、NISTが提供するCVE APIと照合し、記載したパッケージが持つ可能性がある脆弱性について、診断・警告します．
+
 
 ## インストール方法
 始めに示したように、DoCheckerはVSCodeの拡張機能となっている．
@@ -22,7 +26,6 @@ DoCheckerに関するファイルは、本ページのDoChecker.vsixを配置し
 
 (3) DoChecker.vsixを選択．
 ＜図＞
-
 ---
 
 これにより，DoCheckerを利用可能となる．
@@ -30,16 +33,18 @@ DoCheckerに関するファイルは、本ページのDoChecker.vsixを配置し
 ## DoCheckerの使い方
 DoCheckerでは、NISTが提供するCVE APIを利用するため、オフライン上で利用できない点については注意してください．
 
-DoCheckerをインストールできた方は、VSCode上でDockerfileを開いてみてください．
+DoCheckerをインストールできた方は、VSCode上でDockerfileを開いてください．
+本ページで提供しているDockerfileのサンプルでも大丈夫です．
 DoCheckerはVSCode上のDockerfileがアクティブエディタとなったとき，もしくは保存されたときに脆弱性診断を行います．
 DoCheckerが正常に動作している場合は以下のような出力が得られると思います．
 
 ![スクリーンショット (5)](https://github.com/user-attachments/assets/e689498b-4557-442c-9786-01368840652c)
 
+DoCheckerの利用上の注意点
+(1) オフラインでの利用は不可：DoCheckerでは、NISTが提供するCVE APIを利用するため、オフライン上で利用できない点については注意してください．
+
+(2) レスポンスの遅さ：CVE APIの利用，およびCVE番号の出力等を行っているため，すこし処理に時間がかかります．Dockerfileの保存を行ったのち，15秒ほどすると結果が表示されます．
+成功を祈り，静かに精神統一しましょう．
 
 ## 開発者
 セキュリティ讃歌
-
-## 開発に貢献する方法
-
-## ライセンス
