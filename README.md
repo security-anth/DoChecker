@@ -13,7 +13,7 @@ DoCheckerの動作のイメージ図は以下のものとなっています．
 VSCodeの拡張機能導入方法についてはMicrosoftが提供するページを参照してください．
 URL：https://learn.microsoft.com/ja-jp/power-pages/configure/vs-code-extension
 
-DoCheckerに関するファイルは、本ページのDoChecker.vsixを配置しているため、これをVSCodeの拡張機能としてインストールしてください．
+DoCheckerに関するファイルは、本ページのDoChecker.vsixとして配置しているため、これをVSCodeの拡張機能としてインストールしてください．
 具体的なインストール手順を以下に示します．
 ---
 (1) VSCodeの拡張機能画面を開く．
