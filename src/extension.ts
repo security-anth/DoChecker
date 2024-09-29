@@ -67,7 +67,7 @@ export function activate(context: vscode.ExtensionContext) {
 							checker.setDiag(document);
 						}			
 					}
-				}, 5000);
+				}, 10000);
 			}
 		}
 	});
